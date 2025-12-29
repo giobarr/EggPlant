@@ -1,0 +1,13 @@
+
+SCRIPTS
+install.sh: publish and copy the apps
+setup-configs.sh: create the config.cfg file required by PresenceSensorx (x can be 1, 2, or 3)
+simulation.sh: simulates the conveyer/plc/photo-eye that detects eggs and call the tests and control transfers.
+clean.sh: remove bin and obj folders in all projects.
+
+HOW TO RUN
+Call in one terminal:
+/opt/egg-sorter/PresenceSensor3/Sorter.sh
+
+Call in another terminal:
+simulation.sh

@@ -1,0 +1,13 @@
+
+Log for PresenceSensor.
+Log for SmartVision.
+Log for Balance.
+Sorter counts eggs and save on Oracle.
+The first PresenceSensor counts eggs and save on Oracle (waste = sorter - presencesensor).
+Design Patterns.
+Documentation.
+Container for those apps.
+Orchestration.
+Error return code system.
+Unit testing.
+Devops.

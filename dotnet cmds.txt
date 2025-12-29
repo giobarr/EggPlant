@@ -1,0 +1,17 @@
+
+dotnet new console -n PresenceSensor
+cd PresenceSensor
+
+dotnet new console -n SmartVision
+cd SmartVision
+dotnet add package Apache.NMS.ActiveMQ
+
+dotnet new console -n Balance
+cd Balance
+dotnet add package Apache.NMS.ActiveMQ
+
+dotnet new console -n Sorter
+cd Sorter
+dotnet add package Apache.NMS.ActiveMQ
+
+chmod +x install.sh

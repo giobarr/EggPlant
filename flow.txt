@@ -1,0 +1,18 @@
+EGG SORTER SYSTEM
+The conveyer carry eggs.
+The 1th PresenceSensor detects one egg.
+The 1th PresenceSensor calls SmartVision.
+SmartVision checks if egg is 0 (good) or 1 (odd).
+SmartVision sends the result to AMQ.
+The 2nd PresenceSensor detects one egg.
+The 2nd PresenceSensor calls a balance.
+Balance checks if egg is 0 (a, Premium) or 1 (b, Common).
+Balance sends the result to AMQ.
+The 3nd PresenceSensor detecs one egg.
+The 3nd PresenceSensor calls Sorter
+Sorter gets the result from SmartVision and Balance.
+Sorter open transfer 1 for 00, transfer 2 for 01, 10, and 11
+
+An asp shows how many eggs type A and B per shift. Another screen allow to reset SmartV and Balance and send the current 2 results to /dev/null (in case an egg brake and the transfer be not necessary).
+
+This system requires the Podman container running AMQ (see the Podman branch, activity 3, in my github).
